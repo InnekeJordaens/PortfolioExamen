@@ -1,0 +1,324 @@
+body {
+  padding-bottom: 6rem;
+  background-color: lightyellow;
+}
+
+nav {
+    background-image: linear-gradient(to right, #00d4f4, #00dceb, #00e2db, #00e7c5, #12eba9);
+  	width: 20rem;
+  	height: 35rem;
+    position: fixed;
+  	top: 8rem;
+    left: 50%;
+    margin-left: -10rem;
+    align-content: center;
+  	padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    border: 0.2rem solid black;
+}
+
+a {
+  font-size: 2rem;
+  font-family: helvetica;
+  font-weight: 900;
+  text-decoration: underline;
+  color: Black;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+a:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  transition-property: all;
+  transition-duration: 0.2s;
+  transform: translateY(0.1rem);
+}
+
+#light:hover {
+  transform: translateY(0rem);
+}
+
+.menu {
+  display: block;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  border: 2px solid black;
+  background-color: #A1FFDB;
+  width: 10rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.onzichtbaar {
+  display: none;
+}
+
+main {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+h1 {
+  font-size: 2rem;
+  font-family: helvetica;
+  font-weight: 900;
+  padding: 2rem;
+  border: 1.5px solid black;
+  line-height: 2.5rem;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  width: auto;
+  max-width: 40rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4rem;
+  background-color: white;
+}
+
+.foto {
+  background-image: url(Afbeeldingen/portret.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 40rem;
+  width: 40rem;
+  border-radius: 50%;
+  margin-top: 5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.intro {
+  display: block;
+  font-size: 2rem;
+  font-family: helvetica;
+  width: auto;
+  max-width: 50rem;
+  padding: 3rem;
+  border: 1.5px solid black;
+  line-height: 2.5rem;
+  background-color: white;
+  margin-bottom: 4rem;
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.uitgelicht {
+  font-size: 2rem;
+  font-family: helvetica;
+  font-weight: 900;
+  padding: 2rem;
+  border: 1.5px solid black;
+  line-height: 2.5rem;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  width: auto;
+  max-width: 120rem;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+}
+
+.afbeeldingen {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.afbeelding1 {
+  background-image: url(Afbeeldingen/vrouw.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50rem;
+  margin-bottom: 1rem;
+}
+
+.afbeelding2 {
+  background-image: url(Afbeeldingen/sci-fi.gif);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50rem;
+  margin-bottom: 1rem;
+}
+
+.afbeelding3 {
+  background-image: url(Afbeeldingen/woestijn.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50rem;
+  margin-bottom: 1rem;
+}
+
+.contact {
+  width: 100%;
+  max-width: 70rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-bottom: 3rem;
+}
+
+
+#dark {
+  font-size: 1.5rem;
+  text-decoration: none;
+  padding: 0.5rem;
+  border: 1px solid black;
+  background-color: lightblue;
+  height: 2.5rem;
+  margin-left: 2rem;
+  width: 50rem;
+}
+
+#light {
+  font-size: 1.5rem;
+  text-decoration: none;
+  padding: 0.5rem;
+  border: 1px solid black;
+  background-color: lightblue;
+  width: 10rem;
+  height: 2.5rem;
+  display: block;
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+
+@supports (grid-area: auto) {
+@media (min-width: 860px) {
+  .menu {
+    display: none;
+  }
+
+.onzichtbaar {
+    display: flex;
+  }
+
+  nav {
+    margin-top: -10rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    height: 10rem;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    border: none;
+    padding-bottom: 0.5rem;
+    background-color: #A1FFDB;
+    top: 0;
+    left: 0;
+    position: absolute;
+  }
+
+  a {
+    font-size: 2rem;
+    font-family: helvetica;
+    font-weight: 900;
+    text-decoration: none;
+    color: Black;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    border: 2px solid black;
+    background-color: #A1FFDB;
+    height: 4.5rem;
+    margin-top: -2.5rem;
+  }
+
+  main {
+    position: relative;
+    top: 10rem;
+  }
+
+  .voorstelling {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 120rem;
+  }
+
+  .intro {
+    display: block;
+    font-size: 2rem;
+    font-family: helvetica;
+    width: auto;
+    max-width: 50rem;
+    padding: 3rem;
+    border: 1.5px solid black;
+    line-height: 2.5rem;
+    background-color: white;
+    margin-bottom: 4rem;
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .afbeeldingen {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 1rem;
+  }
+
+  .afbeelding1 {
+    max-height: 40rem;
+  }
+
+  .afbeelding2 {
+    max-height: 40rem;
+  }
+
+  .afbeelding3 {
+    max-height: 40rem;
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .intro {
+    display: block;
+    position: relative;
+    top: -38rem;
+    left: 47rem;
+    font-size: 2rem;
+    font-family: helvetica;
+    width: 50rem;
+    padding: 3rem;
+    border: 1.5px solid black;
+    line-height: 2.5rem;
+    background-color: white;
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+
+  .foto {
+    background-image: url(Afbeeldingen/portret.jpg);
+    background-repeat: no-repeat;
+    height: 50rem;
+    width: 50rem;
+    border-radius: 50%;
+    margin-top: 5rem;
+    position: relative;
+    left: 3rem;
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+
+  .uitgelicht {
+    position: relative;
+    top: -18rem;
+  }
+
+  .afbeeldingen {
+    max-width: 120rem;
+    position: relative;
+    top: -18rem;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+}
